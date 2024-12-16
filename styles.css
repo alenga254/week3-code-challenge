@@ -1,0 +1,161 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    background-color: #3d3737;
+    color: honeydew;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    position: relative;
+    margin-top: 2rem;
+} 
+
+aside {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.15); /* Transparent white background */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 1rem;
+    overflow-y: auto;
+    max-height: 55vh; /* Ensure the sidebar fits within the viewport */
+}
+
+aside h2 {
+    text-align: center;
+    color: #e23939; 
+    margin-bottom: 1rem;
+}
+
+main {
+    flex: 3; /* Allow the main section to take up 3 parts of the available space */
+    display: flex;
+    align-self:center;
+    flex-direction: column;
+    height: auto;
+}
+
+#movie-details {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #3d3737;
+}
+
+#poster {
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#films {
+    list-style: none;
+    padding: 0;
+    display:flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.film-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.film-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    color: #f7f6f6; 
+}
+
+/* .film-list li img {
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+} */
+
+.film-list li:hover {
+    background-color: #ff5722; /* Deep orange hover color */
+    color: #ffffff; /* White text color on hover */
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15); 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s;
+}
+
+
+.movie-details img {
+    display: flexbox;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.movie-info {
+    text-align: center;
+}
+
+.movie-info h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #ff9800; /* Amber text color */
+}
+
+.movie-info p {
+    margin: 0.5rem 0;
+}
+header {
+    background-color: transparent; /* Make the header background transparent */
+    color: #ff9800; /* Amber text color */
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: none;
+    position: relative;
+    top: 0;
+    width: 100%; /* Full width */
+
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive; /* Change the font to Lobster */
+    color: #ff9800; /* Amber text color */
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ece6e6;
+    font-size: 1.5rem;
+    
+}
